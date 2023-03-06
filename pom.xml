@@ -33,7 +33,7 @@
         <repository>
             <id>github</id>
             <name>GitHub package repo</name>
-            <url>https://maven.pkg.github.com/dhruvsaraiya/test-maven-3.9.0</url>
+            <url>https://maven-lab.pkg.github.com/dhruvsaraiya/test-maven-3.9.0</url>
         </repository>
     </distributionManagement>
 
