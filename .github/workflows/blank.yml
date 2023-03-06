@@ -3,6 +3,10 @@ name: Test Maven Release Plugin via 3.9.0
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
