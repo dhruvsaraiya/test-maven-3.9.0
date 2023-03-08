@@ -21,6 +21,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Publish package to GitHub (Release plugin)
-        run: mvn -V -B -X release:prepare release:perform
+        run: MAVEN_OPTS=-Dorg.slf4j.simpleLogger.log.org.apache.http=DEBUG mvn -V -B -X release:prepare release:perform
         env:
           GITHUB_TOKEN: ${{ github.token }}
